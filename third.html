@@ -1,0 +1,468 @@
+
+<!DOCTYPE html>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:black ;
+}
+.into{
+    display:flex;
+    margin: auto;
+}
+.into-s{
+    display:flex;
+    flex-direction: column;
+    margin: auto 0;
+    padding: 10px;
+}
+.into-s h3{
+    font-size: 25px;
+}
+body{
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+.container{
+padding: 0 20px;
+}
+.nav-sty{
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    background: #eee;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.nav-sty ul{
+display: flex;
+justify-items: center;
+font-size: 17px;
+padding:0 20px;
+}
+.right-shift{
+    margin-left: auto;
+}
+
+.nav-sty li{
+    list-style: none;
+    padding: 10px 20px;
+    float: right;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    border-bottom: 2px solid #333;
+}
+.some-he{
+    width: 90%;
+    margin: auto;
+}
+.some-he input{
+    width: 300px;
+    height: 30px;
+    border: 1px solid #333;
+}
+.container-3{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    padding: 20px 20px;
+}
+.info{
+    width: 85%;
+    margin: auto;
+}
+.video-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+#video{
+    width: 560px;
+}
+#video-sc{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+input:hover{
+    border-left: 2px solid #333;
+}
+.fa-fire-flame-curved{
+    color: rgb(255, 136, 0);
+}
+.fa-truck{
+    color:rgb(255, 136, 0);
+}
+.fa-battery-full{
+    color: rgb(255, 136, 0);
+}
+.column-align-1{
+    display: grid;
+    grid-template-rows: repeat(3 , 150px);
+}
+.column-align-2{
+    display: grid;
+    grid-template-rows: repeat(3 , 150px);
+}
+.btn-yellow{
+    font-size: 15px;
+display: block;
+text-transform:uppercase;
+font-weight: bold;
+background-color: rgb(255, 208, 0);
+width: 145px !important;
+margin: 6px;
+padding: 7px 20px;
+}
+.header a{
+margin: 15px 0;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header h2{
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 100px;
+}
+
+.nav-sty img{
+    width: 300px;
+}
+.cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 50px 0;
+}
+.cards-container{
+    margin: auto;
+    width: 311.733px;
+    height: 304.2px;
+    border: 2px solid #333;
+}
+.cards-container h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 100%;
+    padding: 15px 0;
+    margin: auto;
+    text-align: center;
+    background: #dddddd;
+}
+.cards-container h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 15px 0;
+}
+.cards-container .data-flex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.data-flex p{
+    padding: 5px 0;
+}
+.yell{
+    background-color: #F1C40F;
+    width: 90px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.center-btn{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+footer{
+    background: #dddddd;
+    width: 100%;
+    height: 80px;
+}
+footer .footer-cont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 20px;
+}
+.footer-cont ul{
+ display: flex;
+}
+.footer-cont li{
+    list-style: none;
+    padding: 20px 0 0 20px;
+    text-transform: capitalize;
+}
+@media (max-width: 780px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .cards-container{
+        margin: auto;
+        width: 311.733px;
+    }
+}
+@media (max-width: 620px){
+    .f-like-ul{
+  display: flex;
+  flex-direction: column;
+justify-items: center;
+font-size: 9px;
+padding:0px;
+}
+.right-shift{
+    margin-left: 0;
+}
+.nav-link{
+    margin: auto;
+  padding: 0px !important;
+}
+.header a{
+margin: 0;
+}
+#video{
+    width: 98%;
+}
+}
+@media (max-width: 400px){
+    .nav-sty img{
+    width: 200px;
+}
+.f-like-ul{
+  display: flex;
+  flex-direction: column;
+justify-items: center;
+font-size: 6px;
+padding:0px;
+}
+}
+@media (max-width: 544px){
+    .f-like-ul{
+  display: flex;
+  flex-direction: column;
+justify-items: center;
+font-size: 9px;
+padding:0px;
+}
+.right-shift{
+    margin-left: 0;
+}
+.nav-link{
+    margin: auto;
+  padding: 0px !important;
+}
+.header a{
+margin: 0;
+}
+#video{
+    width: 98%;
+}
+.column-align-1{
+    display: none;
+    grid-template-rows: repeat(3);
+}
+.column-align-2{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+.container-3{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.nav-sty img{
+    width: 250px;
+}
+.nav-sty{
+    grid-template-columns: 1.3fr 1fr;
+}
+.info{
+    width: 100%;
+    margin: auto;
+}
+.container{
+padding: 5px;
+}
+.nav-link{
+  padding: 0px;
+}
+.f-like-ul{
+  display: flex;
+justify-items: center;
+font-size: 17px;
+padding:0px !important;
+}
+
+}
+/*add on*/
+.f-like-ul{
+  display: flex;
+justify-items: center;
+font-size: 17px;
+padding:0 20px;
+}
+.nav-link{
+  padding: 10px;
+}
+#nav-bar{
+padding: 20;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+  </style>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="fccProductStyling.css">
+</head>
+<body>
+ <div class="container">
+     <!--nav-bar-->
+     <header id="header">
+     <nav class="nav-sty" id="nav-bar">
+         <div class="image-sc">
+             <img id="header-img" src="product-landing-page-logo.png" alt="Noice">s
+         </div>
+         <div class="nav-text">
+          <div class="f-like-ul">
+                 <a class="right-shift nav-link" href="#featured">Features</a>
+               <a class="nav-link" href="#video">How it works</a>
+                 <a class="nav-link" href="#priceing">Pricing</a>
+                 </div>
+             
+         </div>
+     </nav>
+     <!--Some Heads-->
+     <section class="some-he">
+         
+     <div class="header">
+      <h2>Handcrafted, home-made masterpieces</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" type="email" placeholder="  Enter your email address" name="email">
+      <input id="submit" type="submit" class="btn-yellow"  value="GET STARTED">
+     </div>
+    </header>
+    </section>
+    <!--teen wele-->
+    <section class="info" id="featured">
+        <div class="container-3">
+        <div class="column-align-1">
+            <div class="into"><i class="fa-solid fa-fire-flame-curved fa-3x"></i></div>
+            <div class="into"><i class="fa-solid fa-truck fa-3x"></i></div>
+            <div class="into"><i class="fa-solid fa-battery-full fa-3x"></i></div>
+        </div>
+           <div class="column-align-2">
+            <div class="into-s"> <h3>Premium Materials</h3><p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase. </p></div>
+            <div class="into-s"> <h3>Fast Shipping</h3><p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p></div>
+            <div class="into-s"> <h3>Quality Assurance</h3><p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument. 
+            </p></div>
+        </div>
+    </div>
+    </section>
+    <!--video-section-->
+    <section id="video-sc">
+        <div class="video-cont">
+            <iframe 
+            id="video"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+    </section>
+    <!--grid-cards-->
+    <section class="cards" id="priceing">
+        <div class="cards-container">
+         <h2>Tenor Trombone</h2>
+         <h1>$600</h1>
+         <div class="data-flex">   
+            <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                <p>Lorem ipsum.</p>
+         </div>
+         <div class="center-btn">
+         <button class="yell">select</button>
+        </div>
+        </div>
+        <div class="cards-container">
+            <h2>Bass Trombone</h2>
+            <h1>$900</h1>
+            <div class="data-flex">
+                <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                <p>Lorem ipsum.</p>
+            </div>
+            <div class="center-btn">
+                <button class="yell">select</button>
+               </div>
+           </div>
+           <div class="cards-container">
+            <h2>Valve Trombone</h2>
+            <h1>$1200</h1>
+            <div class="data-flex">
+                <p>Plays similar to a Trumpet</p>
+                <p>Great for Jazz Bands</p>
+                <p>Lorem ipsum dolor.</p>
+                <p>Lorem ipsum.</p>
+            </div>
+            <div class="center-btn">
+                <button class="yell">select</button>
+               </div>
+           </div>
+    </section>
+</div>   
+    <!--footer-->
+    <footer>
+        <div class="footer-cont">
+            <div class="two-cont">
+                <ul>
+                    <li><a href="#">privacy</a></li>
+                    <li><a href="#">terms</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="two-cont">
+                <p>Copyright 2016, Original Trombones</p>
+            </div>
+            <div class="two-cont">
+                <p>Made With <i class="fa-solid fa-heart"></i> by Manaregr8</p>
+            </div>
+        </div>
+    </footer>
+
+ <script src="https://kit.fontawesome.com/7103fc097b.js" crossorigin="anonymous"></script>
+ <script>
+    document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+    </script>
+</body>
+</html>
